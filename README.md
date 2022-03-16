@@ -17,6 +17,41 @@ Sign Robbery for QBCore
 	["dontblockintersectionsign"] 				     = {["name"] = "dontblockintersectionsign", 				        ["label"] = "Intersection Sign", 			        ["weight"] = 1, 		["type"] = "item", 		["image"] = "dontblockintersectionsign.png", 		        ["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "Interdect Sign"},
 	["uturnsign"] 				     = {["name"] = "uturnsign", 				        ["label"] = "U Turn Sign", 			        ["weight"] = 1, 		["type"] = "item", 		["image"] = "uturnsign.png", 		        ["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "U Turn Sign"},	        ["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "U Turn Sign"},```
 
+# dp emotes / client / AnimationList.lua
+```lua
+   ["stopsign"] = {"amb@world_human_janitor@male@base", "base", "Stop Sign", AnimationOptions =
+   {
+       Prop = "prop_sign_road_01a",
+       PropBone = 57005,
+       PropPlacement = {0.10, -1.0, 0.0, -90.0, -250.0, 0.0},
+       EmoteLoop = true,
+       EmoteMoving = true,
+   }},
+   ["walkingmansign"] = {"amb@world_human_janitor@male@base", "base", "Walking Man Sign", AnimationOptions =
+   {
+       Prop = "prop_sign_road_05a",
+       PropBone = 57005,
+       PropPlacement = {0.10, -1.0, 0.0, -90.0, -250.0, 0.0},
+       EmoteLoop = true,
+       EmoteMoving = true,
+   }},
+   ["dontblockintersectionsign"] = {"amb@world_human_janitor@male@base", "base", "Intersection Sign", AnimationOptions =
+   {
+       Prop = "prop_sign_road_03e",
+       PropBone = 57005,
+       PropPlacement = {0.10, -1.0, 0.0, -90.0, -250.0, 0.0},
+       EmoteLoop = true,
+       EmoteMoving = true,
+   }},
+   ["uturnsign"] = {"amb@world_human_janitor@male@base", "base", "U Turn Sign", AnimationOptions =
+   {
+       Prop = "prop_sign_road_03m",
+       PropBone = 57005,
+       PropPlacement = {0.10, -1.0, 0.0, -90.0, -250.0, 0.0},
+       EmoteLoop = true,
+       EmoteMoving = true,
+   }},
+```
 # Credits
 * [Obtaizen](https://github.com/Obtaizen)
 * [Snipe](https://github.com/pushkart2)
