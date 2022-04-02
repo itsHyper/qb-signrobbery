@@ -70,7 +70,7 @@ RegisterNetEvent("qb-signrobbery:client:DontBlockIntersectionSign", function()
         }, {}, {}, function()
         end, function()
             StopAnimTask(PlayerPedId(), "amb@prop_human_bum_bin@base", "base", 1.0)
-            TriggerServerEvent("dontblockintersectionsign:server:additem")
+            TriggerServerEvent("qb-signrobbery:server:DontBlockIntersectionSign")
             DeleteEntity(obj)
         end)
     end
@@ -106,7 +106,7 @@ CreateThread(function()
         options = {
             {
                 type = 'client',
-                event = "qb-signrobbery:client:StealSign",
+                event = "qb-signrobbery:client:StopSign",
                 icon = 'fas fa-user-secret',
                 label = 'Steal Sign',
             }
